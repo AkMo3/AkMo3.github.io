@@ -122,40 +122,6 @@
 									
 										
 									<tr>
-										<td class="c">AvoidEscapedUnicodeCharactersCheck</td>
-										
-										<td class="c">
-											
-										</td>
-										
-										
-										<td class="c">
-											
-										</td>
-										
-									</tr>
-									
-								
-									
-										
-									<tr>
-										<td class="c">NeedBracesCheck</td>
-										
-										<td class="c">
-											
-										</td>
-										
-										
-										<td class="c">
-											
-										</td>
-										
-									</tr>
-									
-								
-									
-										
-									<tr>
 										<td class="c">RightCurlyCheck</td>
 										
 										<td class="c">
@@ -171,22 +137,193 @@
 									
 								
 									
-								
-									
 										
 									<tr>
-										<td class="c">UniquePropertiesCheck</td>
+										<td class="c">SuppressionXpathSingleFilter</td>
 										
 										<td class="c">
+											
+												message
+												
+													<li>Javadoc comment at column \d+ has parse error</li>
+												
+												<br/>
 											
 										</td>
 										
 										
 										<td class="c">
+											
+												message
+												
+													<li>Javadoc comment at column \d+ has parse error</li>
+												
+												<br/>
 											
 										</td>
 										
 									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">RightCurly</td>
+										
+										<td class="c">
+											
+												tokens
+												
+													<li>CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT, INSTANCE_INIT</li>
+												
+												<br/>
+											
+												id
+												
+													<li>RightCurlyAlone</li>
+												
+												<br/>
+											
+												option
+												
+													<li>alone</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												tokens
+												
+													<li>CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT, INSTANCE_INIT</li>
+												
+												<br/>
+											
+												id
+												
+													<li>RightCurlyAlone</li>
+												
+												<br/>
+											
+												option
+												
+													<li>alone</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">RightCurly</td>
+										
+										<td class="c">
+											
+												tokens
+												
+													<li>CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT, INSTANCE_INIT</li>
+												
+												<br/>
+											
+												id
+												
+													<li>RightCurlyAloneOrSingleLine</li>
+												
+												<br/>
+											
+												option
+												
+													<li>alone_or_singleline</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												tokens
+												
+													<li>CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT, INSTANCE_INIT</li>
+												
+												<br/>
+											
+												id
+												
+													<li>RightCurlyAloneOrSingleLine</li>
+												
+												<br/>
+											
+												option
+												
+													<li>alone_or_singleline</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">RightCurly</td>
+										
+										<td class="c">
+											
+												tokens
+												
+													<li>CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT, INSTANCE_INIT</li>
+												
+												<br/>
+											
+												id
+												
+													<li>RightCurlySame</li>
+												
+												<br/>
+											
+												option
+												
+													<li>same</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												tokens
+												
+													<li>CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT, INSTANCE_INIT</li>
+												
+												<br/>
+											
+												id
+												
+													<li>RightCurlySame</li>
+												
+												<br/>
+											
+												option
+												
+													<li>same</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
 									
 								
 									
@@ -211,25 +348,25 @@
 						<tr class="b">
 							<td>base</td>
 							<td id="filesBase">2561</td>
-							<td id="totalBase">5858</td>
+							<td id="totalBase">2458</td>
 							
-								<td id="warningSeverityNumBase">5858</td>
+								<td id="warningSeverityNumBase">2458</td>
 							
 						</tr>
 						<tr class="a">
 							<td>patch</td>
 							<td id="filesPatch">2561</td>
-							<td id="totalPatch">5858</td>
+							<td id="totalPatch">2438 (20 removed)</td>
 							
-								<td id="warningSeverityStatisticsPatch">5858</td>
+								<td id="warningSeverityStatisticsPatch">2438 (20 removed)</td>
 							
 						</tr>
 						<tr class="d">
 							<td/>
-							<td id="filesDiff">0 files with differences</td>
-							<td id="totalDiff">0 changes in violations</td>
+							<td id="filesDiff">6 files with differences</td>
+							<td id="totalDiff">20 changes in violations</td>
 							
-								<td id="warningSeverityNumDiff">0 changes in violations</td>
+								<td id="warningSeverityNumDiff">20 changes in violations</td>
 							
 						<tr>
 					</table>
@@ -240,54 +377,486 @@
 							<tr class="a">
 								<th>Report id</th>
 								
+									<th>RightCurlyAlone</th>
+								
 									<th>com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck</th>
 								
-									<th>com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck</th>
+									<th>RightCurlySame</th>
 								
-									<th>com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheck</th>
+									<th>RightCurlyAloneOrSingleLine</th>
 								
 							</tr>
 							<tr class="b">
 								<td>base</td>
 								
+									<td id="RightCurlyAloneModuleNumBase">2191</td>
+								
 									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheckModuleNumBase">159</td>
 								
-									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheckModuleNumBase">5620</td>
+									<td id="RightCurlySameModuleNumBase">54</td>
 								
-									<td id="com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheckModuleNumBase">79</td>
+									<td id="RightCurlyAloneOrSingleLineModuleNumBase">54</td>
 								
 							</tr>
 							<tr class="a">
 								<td>patch</td>
 								
+									<td id="RightCurlyAloneModuleStatisticsPatch">2185 (6 removed)</td>
+								
 									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheckModuleStatisticsPatch">159</td>
 								
-									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheckModuleStatisticsPatch">5620</td>
+									<td id="RightCurlySameModuleStatisticsPatch">47 (7 removed)</td>
 								
-									<td id="com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheckModuleStatisticsPatch">79</td>
+									<td id="RightCurlyAloneOrSingleLineModuleStatisticsPatch">47 (7 removed)</td>
 								
 							</tr>
 							<tr class="d">
 								<td>changes in violations</td>
 								
+									<td id="RightCurlyAloneModuleNumDiff">6</td>
+								
 									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheckModuleNumDiff">0</td>
 								
-									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheckModuleNumDiff">0</td>
+									<td id="RightCurlySameModuleNumDiff">7</td>
 								
-									<td id="com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheckModuleNumDiff">0</td>
+									<td id="RightCurlyAloneOrSingleLineModuleNumDiff">7</td>
 								
 							<tr>
 						</table>
 					
 
 					<br />
-					Number of unique base messages reported below: <span id="uniqueMessagesBase">0</span><br />
+					Number of unique base messages reported below: <span id="uniqueMessagesBase">20</span><br />
 					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">0</span><br />
 				</div>
 			</div>
 
 			<div class="section">
 				<h2 a="Violations:">Violations:</h2>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/main/java/org/apache/hadoop/hbase/CompoundConfiguration.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A1" href = "#A1">#A1</a></td>
+								<td>warning</td>
+								<td>RightCurlyAlone</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/main/java/org/apache/hadoop/hbase/CompoundConfiguration.java.html#L424">424</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A2" href = "#A2">#A2</a></td>
+								<td>warning</td>
+								<td>RightCurlyAloneOrSingleLine</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/main/java/org/apache/hadoop/hbase/CompoundConfiguration.java.html#L424">424</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A3" href = "#A3">#A3</a></td>
+								<td>warning</td>
+								<td>RightCurlySame</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/main/java/org/apache/hadoop/hbase/CompoundConfiguration.java.html#L424">424</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/main/java/org/apache/hadoop/hbase/HBaseIOException.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A4" href = "#A4">#A4</a></td>
+								<td>warning</td>
+								<td>RightCurlyAlone</td>
+								<td>&#39;}&#39; at column 3 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/main/java/org/apache/hadoop/hbase/HBaseIOException.java.html#L48">48</a></td>
+								
+								
+									
+									<td class="keepWidth">3</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A5" href = "#A5">#A5</a></td>
+								<td>warning</td>
+								<td>RightCurlyAloneOrSingleLine</td>
+								<td>&#39;}&#39; at column 3 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/main/java/org/apache/hadoop/hbase/HBaseIOException.java.html#L48">48</a></td>
+								
+								
+									
+									<td class="keepWidth">3</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A6" href = "#A6">#A6</a></td>
+								<td>warning</td>
+								<td>RightCurlySame</td>
+								<td>&#39;}&#39; at column 3 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/main/java/org/apache/hadoop/hbase/HBaseIOException.java.html#L48">48</a></td>
+								
+								
+									
+									<td class="keepWidth">3</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A7" href = "#A7">#A7</a></td>
+								<td>warning</td>
+								<td>RightCurlyAloneOrSingleLine</td>
+								<td>&#39;}&#39; at column 4 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/main/java/org/apache/hadoop/hbase/HBaseIOException.java.html#L48">48</a></td>
+								
+								
+									
+									<td class="keepWidth">4</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A8" href = "#A8">#A8</a></td>
+								<td>warning</td>
+								<td>RightCurlySame</td>
+								<td>&#39;}&#39; at column 4 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/main/java/org/apache/hadoop/hbase/HBaseIOException.java.html#L48">48</a></td>
+								
+								
+									
+									<td class="keepWidth">4</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/test/java/org/apache/hadoop/hbase/ClassFinder.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A9" href = "#A9">#A9</a></td>
+								<td>warning</td>
+								<td>RightCurlyAlone</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/test/java/org/apache/hadoop/hbase/ClassFinder.java.html#L290">290</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A10" href = "#A10">#A10</a></td>
+								<td>warning</td>
+								<td>RightCurlyAloneOrSingleLine</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/test/java/org/apache/hadoop/hbase/ClassFinder.java.html#L290">290</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A11" href = "#A11">#A11</a></td>
+								<td>warning</td>
+								<td>RightCurlySame</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/test/java/org/apache/hadoop/hbase/ClassFinder.java.html#L290">290</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/test/java/org/apache/hadoop/hbase/ClassTestFinder.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A12" href = "#A12">#A12</a></td>
+								<td>warning</td>
+								<td>RightCurlyAlone</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/test/java/org/apache/hadoop/hbase/ClassTestFinder.java.html#L121">121</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A13" href = "#A13">#A13</a></td>
+								<td>warning</td>
+								<td>RightCurlyAloneOrSingleLine</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/test/java/org/apache/hadoop/hbase/ClassTestFinder.java.html#L121">121</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A14" href = "#A14">#A14</a></td>
+								<td>warning</td>
+								<td>RightCurlySame</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/test/java/org/apache/hadoop/hbase/ClassTestFinder.java.html#L121">121</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/test/java/org/apache/hadoop/hbase/TestClassFinder.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A15" href = "#A15">#A15</a></td>
+								<td>warning</td>
+								<td>RightCurlyAlone</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/test/java/org/apache/hadoop/hbase/TestClassFinder.java.html#L418">418</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A16" href = "#A16">#A16</a></td>
+								<td>warning</td>
+								<td>RightCurlyAloneOrSingleLine</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/test/java/org/apache/hadoop/hbase/TestClassFinder.java.html#L418">418</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A17" href = "#A17">#A17</a></td>
+								<td>warning</td>
+								<td>RightCurlySame</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-common/src/test/java/org/apache/hadoop/hbase/TestClassFinder.java.html#L418">418</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-server/src/main/java/org/apache/hadoop/hbase/util/BloomFilterFactory.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A18" href = "#A18">#A18</a></td>
+								<td>warning</td>
+								<td>RightCurlyAlone</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-server/src/main/java/org/apache/hadoop/hbase/util/BloomFilterFactory.java.html#L237">237</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A19" href = "#A19">#A19</a></td>
+								<td>warning</td>
+								<td>RightCurlyAloneOrSingleLine</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-server/src/main/java/org/apache/hadoop/hbase/util/BloomFilterFactory.java.html#L237">237</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A20" href = "#A20">#A20</a></td>
+								<td>warning</td>
+								<td>RightCurlySame</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/Hbase/hbase-server/src/main/java/org/apache/hadoop/hbase/util/BloomFilterFactory.java.html#L237">237</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
 			</div>
 		</div>
 	</body>

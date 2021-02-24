@@ -122,40 +122,6 @@
 									
 										
 									<tr>
-										<td class="c">AvoidEscapedUnicodeCharactersCheck</td>
-										
-										<td class="c">
-											
-										</td>
-										
-										
-										<td class="c">
-											
-										</td>
-										
-									</tr>
-									
-								
-									
-										
-									<tr>
-										<td class="c">NeedBracesCheck</td>
-										
-										<td class="c">
-											
-										</td>
-										
-										
-										<td class="c">
-											
-										</td>
-										
-									</tr>
-									
-								
-									
-										
-									<tr>
 										<td class="c">RightCurlyCheck</td>
 										
 										<td class="c">
@@ -171,22 +137,193 @@
 									
 								
 									
-								
-									
 										
 									<tr>
-										<td class="c">UniquePropertiesCheck</td>
+										<td class="c">SuppressionXpathSingleFilter</td>
 										
 										<td class="c">
+											
+												message
+												
+													<li>Javadoc comment at column \d+ has parse error</li>
+												
+												<br/>
 											
 										</td>
 										
 										
 										<td class="c">
+											
+												message
+												
+													<li>Javadoc comment at column \d+ has parse error</li>
+												
+												<br/>
 											
 										</td>
 										
 									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">RightCurly</td>
+										
+										<td class="c">
+											
+												tokens
+												
+													<li>CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT, INSTANCE_INIT</li>
+												
+												<br/>
+											
+												id
+												
+													<li>RightCurlyAlone</li>
+												
+												<br/>
+											
+												option
+												
+													<li>alone</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												tokens
+												
+													<li>CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT, INSTANCE_INIT</li>
+												
+												<br/>
+											
+												id
+												
+													<li>RightCurlyAlone</li>
+												
+												<br/>
+											
+												option
+												
+													<li>alone</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">RightCurly</td>
+										
+										<td class="c">
+											
+												tokens
+												
+													<li>CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT, INSTANCE_INIT</li>
+												
+												<br/>
+											
+												id
+												
+													<li>RightCurlyAloneOrSingleLine</li>
+												
+												<br/>
+											
+												option
+												
+													<li>alone_or_singleline</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												tokens
+												
+													<li>CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT, INSTANCE_INIT</li>
+												
+												<br/>
+											
+												id
+												
+													<li>RightCurlyAloneOrSingleLine</li>
+												
+												<br/>
+											
+												option
+												
+													<li>alone_or_singleline</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">RightCurly</td>
+										
+										<td class="c">
+											
+												tokens
+												
+													<li>CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT, INSTANCE_INIT</li>
+												
+												<br/>
+											
+												id
+												
+													<li>RightCurlySame</li>
+												
+												<br/>
+											
+												option
+												
+													<li>same</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												tokens
+												
+													<li>CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT, INSTANCE_INIT</li>
+												
+												<br/>
+											
+												id
+												
+													<li>RightCurlySame</li>
+												
+												<br/>
+											
+												option
+												
+													<li>same</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
 									
 								
 									
@@ -211,17 +348,17 @@
 						<tr class="b">
 							<td>base</td>
 							<td id="filesBase">2060</td>
-							<td id="totalBase">1496</td>
+							<td id="totalBase">465</td>
 							
-								<td id="warningSeverityNumBase">1496</td>
+								<td id="warningSeverityNumBase">465</td>
 							
 						</tr>
 						<tr class="a">
 							<td>patch</td>
 							<td id="filesPatch">2060</td>
-							<td id="totalPatch">1496</td>
+							<td id="totalPatch">465</td>
 							
-								<td id="warningSeverityStatisticsPatch">1496</td>
+								<td id="warningSeverityStatisticsPatch">465</td>
 							
 						</tr>
 						<tr class="d">
@@ -242,9 +379,11 @@
 								
 									<th>com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck</th>
 								
-									<th>com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck</th>
+									<th>RightCurlyAlone</th>
 								
-									<th>com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheck</th>
+									<th>RightCurlySame</th>
+								
+									<th>RightCurlyAloneOrSingleLine</th>
 								
 							</tr>
 							<tr class="b">
@@ -252,9 +391,11 @@
 								
 									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheckModuleNumBase">280</td>
 								
-									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheckModuleNumBase">1199</td>
+									<td id="RightCurlyAloneModuleNumBase">111</td>
 								
-									<td id="com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheckModuleNumBase">17</td>
+									<td id="RightCurlySameModuleNumBase">37</td>
+								
+									<td id="RightCurlyAloneOrSingleLineModuleNumBase">37</td>
 								
 							</tr>
 							<tr class="a">
@@ -262,9 +403,11 @@
 								
 									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheckModuleStatisticsPatch">280</td>
 								
-									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheckModuleStatisticsPatch">1199</td>
+									<td id="RightCurlyAloneModuleStatisticsPatch">111</td>
 								
-									<td id="com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheckModuleStatisticsPatch">17</td>
+									<td id="RightCurlySameModuleStatisticsPatch">37</td>
+								
+									<td id="RightCurlyAloneOrSingleLineModuleStatisticsPatch">37</td>
 								
 							</tr>
 							<tr class="d">
@@ -272,9 +415,11 @@
 								
 									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheckModuleNumDiff">0</td>
 								
-									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheckModuleNumDiff">0</td>
+									<td id="RightCurlyAloneModuleNumDiff">0</td>
 								
-									<td id="com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheckModuleNumDiff">0</td>
+									<td id="RightCurlySameModuleNumDiff">0</td>
+								
+									<td id="RightCurlyAloneOrSingleLineModuleNumDiff">0</td>
 								
 							<tr>
 						</table>
