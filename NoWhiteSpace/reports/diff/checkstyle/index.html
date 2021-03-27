@@ -58,6 +58,33 @@
 									
 										
 									<tr>
+										<td class="c">SuppressionSingleFilter</td>
+										
+										
+										<td> </td>
+										<td class="a">
+											
+												checks
+												
+													<li>Checker</li>
+												
+												<br/>
+											
+												message
+												
+													<li>Exception occurred while parsing</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
 										<td class="c">BeforeExecutionExclusionFileFilter</td>
 										
 										
@@ -124,8 +151,6 @@
 							
 								<th>Severity-warning</th>
 							
-								<th>Severity-error</th>
-							
 						</tr>
 						<tr class="b">
 							<td>base</td>
@@ -134,27 +159,21 @@
 							
 								<td id="warningSeverityNumBase">0</td>
 							
-								<td id="errorSeverityNumBase">0</td>
-							
 						</tr>
 						<tr class="a">
 							<td>patch</td>
 							<td id="filesPatch">2740</td>
-							<td id="totalPatch">21 (21 added)</td>
+							<td id="totalPatch">14 (14 added)</td>
 							
 								<td id="warningSeverityStatisticsPatch">14 (14 added)</td>
-							
-								<td id="errorSeverityStatisticsPatch">7 (7 added)</td>
 							
 						</tr>
 						<tr class="d">
 							<td/>
-							<td id="filesDiff">13 files with differences</td>
-							<td id="totalDiff">21 changes in violations</td>
+							<td id="filesDiff">6 files with differences</td>
+							<td id="totalDiff">14 changes in violations</td>
 							
 								<td id="warningSeverityNumDiff">14 changes in violations</td>
-							
-								<td id="errorSeverityNumDiff">7 changes in violations</td>
 							
 						<tr>
 					</table>
@@ -165,15 +184,11 @@
 							<tr class="a">
 								<th>Report id</th>
 								
-									<th>com.puppycrawl.tools.checkstyle.Checker</th>
-								
 									<th>com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCaseDefaultColonCheck</th>
 								
 							</tr>
 							<tr class="b">
 								<td>base</td>
-								
-									<td id="com.puppycrawl.tools.checkstyle.CheckerModuleNumBase">0</td>
 								
 									<td id="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCaseDefaultColonCheckModuleNumBase">0</td>
 								
@@ -181,15 +196,11 @@
 							<tr class="a">
 								<td>patch</td>
 								
-									<td id="com.puppycrawl.tools.checkstyle.CheckerModuleStatisticsPatch">7 (7 added)</td>
-								
 									<td id="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCaseDefaultColonCheckModuleStatisticsPatch">14 (14 added)</td>
 								
 							</tr>
 							<tr class="d">
 								<td>changes in violations</td>
-								
-									<td id="com.puppycrawl.tools.checkstyle.CheckerModuleNumDiff">7</td>
 								
 									<td id="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCaseDefaultColonCheckModuleNumDiff">14</td>
 								
@@ -199,7 +210,7 @@
 
 					<br />
 					Number of unique base messages reported below: <span id="uniqueMessagesBase">0</span><br />
-					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">21</span><br />
+					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">14</span><br />
 				</div>
 			</div>
 
@@ -271,526 +282,6 @@
 					</table>
 				</div>
 				<div class="section">
-					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/asttreestringprinter/InputAstTreeStringPrinter.java</h3>
-					<tr class="b">
-					<table border="0" class="bodyTable">
-					        <th></th>
-							<th>Severity</th>
-							<th>Rule</th>
-							<th>Message</th>
-							<th>Line</th>
-							<th>Col</th>
-						</tr>
-						
-							
-								<tr class="a">
-							
-								<td class="keepWidth"><a name="A4" href = "#A4">#A4</a></td>
-								<td>error</td>
-								<td>Checker</td>
-								<td>Got an exception - com.puppycrawl.tools.checkstyle.api.CheckstyleException: NoViableAltException occurred while parsing file /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/asttreestringprinter/InputAstTreeStringPrinter.java.<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:120)<br />
-#x9;at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:152)<br />
-#x9;at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:87)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:328)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:289)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:221)<br />
-#x9;at org.apache.maven.plugins.checkstyle.exec.DefaultCheckstyleExecutor.executeCheckstyle(DefaultCheckstyleExecutor.java:202)<br />
-#x9;at org.apache.maven.plugins.checkstyle.AbstractCheckstyleReport.executeReport(AbstractCheckstyleReport.java:533)<br />
-#x9;at org.apache.maven.plugins.checkstyle.CheckstyleReport.executeReport(CheckstyleReport.java:57)<br />
-#x9;at org.apache.maven.reporting.AbstractMavenReport.generate(AbstractMavenReport.java:255)<br />
-#x9;at org.apache.maven.plugins.site.ReportDocumentRenderer.renderDocument(ReportDocumentRenderer.java:219)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.renderModule(DefaultSiteRenderer.java:319)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.render(DefaultSiteRenderer.java:135)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.renderLocale(SiteMojo.java:175)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.execute(SiteMojo.java:138)<br />
-#x9;at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)<br />
-#x9;at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)<br />
-#x9;at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)<br />
-#x9;at org.apache.maven.cli.MavenCli.execute(MavenCli.java:957)<br />
-#x9;at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:289)<br />
-#x9;at org.apache.maven.cli.MavenCli.main(MavenCli.java:193)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-#x9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-#x9;at java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)<br />
-Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/asttreestringprinter/InputAstTreeStringPrinter.java:2:1: unexpected token: classD<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:191)<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:114)<br />
-#x9;... 36 more<br />
-</td>
-								
-									
-									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/asttreestringprinter/InputAstTreeStringPrinter.java.html#L1">1</a></td>
-								
-								
-									<td class="keepWidth"> </td>
-									
-								
-							</tr>
-						
-					</table>
-				</div>
-				<div class="section">
-					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/filefilters/beforeexecutionexclusionfilefilter/InputBeforeExecutionExclusionFileFilterIncorrectClass.java</h3>
-					<tr class="b">
-					<table border="0" class="bodyTable">
-					        <th></th>
-							<th>Severity</th>
-							<th>Rule</th>
-							<th>Message</th>
-							<th>Line</th>
-							<th>Col</th>
-						</tr>
-						
-							
-								<tr class="a">
-							
-								<td class="keepWidth"><a name="A5" href = "#A5">#A5</a></td>
-								<td>error</td>
-								<td>Checker</td>
-								<td>Got an exception - com.puppycrawl.tools.checkstyle.api.CheckstyleException: NoViableAltException occurred while parsing file /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/filefilters/beforeexecutionexclusionfilefilter/InputBeforeExecutionExclusionFileFilterIncorrectClass.java.<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:120)<br />
-#x9;at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:152)<br />
-#x9;at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:87)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:328)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:289)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:221)<br />
-#x9;at org.apache.maven.plugins.checkstyle.exec.DefaultCheckstyleExecutor.executeCheckstyle(DefaultCheckstyleExecutor.java:202)<br />
-#x9;at org.apache.maven.plugins.checkstyle.AbstractCheckstyleReport.executeReport(AbstractCheckstyleReport.java:533)<br />
-#x9;at org.apache.maven.plugins.checkstyle.CheckstyleReport.executeReport(CheckstyleReport.java:57)<br />
-#x9;at org.apache.maven.reporting.AbstractMavenReport.generate(AbstractMavenReport.java:255)<br />
-#x9;at org.apache.maven.plugins.site.ReportDocumentRenderer.renderDocument(ReportDocumentRenderer.java:219)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.renderModule(DefaultSiteRenderer.java:319)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.render(DefaultSiteRenderer.java:135)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.renderLocale(SiteMojo.java:175)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.execute(SiteMojo.java:138)<br />
-#x9;at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)<br />
-#x9;at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)<br />
-#x9;at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)<br />
-#x9;at org.apache.maven.cli.MavenCli.execute(MavenCli.java:957)<br />
-#x9;at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:289)<br />
-#x9;at org.apache.maven.cli.MavenCli.main(MavenCli.java:193)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-#x9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-#x9;at java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)<br />
-Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/filefilters/beforeexecutionexclusionfilefilter/InputBeforeExecutionExclusionFileFilterIncorrectClass.java:2:1: unexpected token: !<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:191)<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:114)<br />
-#x9;... 36 more<br />
-</td>
-								
-									
-									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/filefilters/beforeexecutionexclusionfilefilter/InputBeforeExecutionExclusionFileFilterIncorrectClass.java.html#L1">1</a></td>
-								
-								
-									<td class="keepWidth"> </td>
-									
-								
-							</tr>
-						
-					</table>
-				</div>
-				<div class="section">
-					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/gui/mainframemodel/InputMainFrameModelIncorrectClass.java</h3>
-					<tr class="b">
-					<table border="0" class="bodyTable">
-					        <th></th>
-							<th>Severity</th>
-							<th>Rule</th>
-							<th>Message</th>
-							<th>Line</th>
-							<th>Col</th>
-						</tr>
-						
-							
-								<tr class="a">
-							
-								<td class="keepWidth"><a name="A6" href = "#A6">#A6</a></td>
-								<td>error</td>
-								<td>Checker</td>
-								<td>Got an exception - com.puppycrawl.tools.checkstyle.api.CheckstyleException: NoViableAltException occurred while parsing file /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/gui/mainframemodel/InputMainFrameModelIncorrectClass.java.<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:120)<br />
-#x9;at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:152)<br />
-#x9;at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:87)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:328)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:289)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:221)<br />
-#x9;at org.apache.maven.plugins.checkstyle.exec.DefaultCheckstyleExecutor.executeCheckstyle(DefaultCheckstyleExecutor.java:202)<br />
-#x9;at org.apache.maven.plugins.checkstyle.AbstractCheckstyleReport.executeReport(AbstractCheckstyleReport.java:533)<br />
-#x9;at org.apache.maven.plugins.checkstyle.CheckstyleReport.executeReport(CheckstyleReport.java:57)<br />
-#x9;at org.apache.maven.reporting.AbstractMavenReport.generate(AbstractMavenReport.java:255)<br />
-#x9;at org.apache.maven.plugins.site.ReportDocumentRenderer.renderDocument(ReportDocumentRenderer.java:219)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.renderModule(DefaultSiteRenderer.java:319)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.render(DefaultSiteRenderer.java:135)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.renderLocale(SiteMojo.java:175)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.execute(SiteMojo.java:138)<br />
-#x9;at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)<br />
-#x9;at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)<br />
-#x9;at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)<br />
-#x9;at org.apache.maven.cli.MavenCli.execute(MavenCli.java:957)<br />
-#x9;at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:289)<br />
-#x9;at org.apache.maven.cli.MavenCli.main(MavenCli.java:193)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-#x9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-#x9;at java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)<br />
-Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/gui/mainframemodel/InputMainFrameModelIncorrectClass.java:2:1: unexpected token: !<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:191)<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:114)<br />
-#x9;... 36 more<br />
-</td>
-								
-									
-									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/gui/mainframemodel/InputMainFrameModelIncorrectClass.java.html#L1">1</a></td>
-								
-								
-									<td class="keepWidth"> </td>
-									
-								
-							</tr>
-						
-					</table>
-				</div>
-				<div class="section">
-					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/javadocpropertiesgenerator/InputJavadocPropertiesGeneratorParseError.java</h3>
-					<tr class="b">
-					<table border="0" class="bodyTable">
-					        <th></th>
-							<th>Severity</th>
-							<th>Rule</th>
-							<th>Message</th>
-							<th>Line</th>
-							<th>Col</th>
-						</tr>
-						
-							
-								<tr class="a">
-							
-								<td class="keepWidth"><a name="A7" href = "#A7">#A7</a></td>
-								<td>error</td>
-								<td>Checker</td>
-								<td>Got an exception - com.puppycrawl.tools.checkstyle.api.CheckstyleException: IllegalStateException occurred while parsing file /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/javadocpropertiesgenerator/InputJavadocPropertiesGeneratorParseError.java.<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:120)<br />
-#x9;at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:152)<br />
-#x9;at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:87)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:328)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:289)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:221)<br />
-#x9;at org.apache.maven.plugins.checkstyle.exec.DefaultCheckstyleExecutor.executeCheckstyle(DefaultCheckstyleExecutor.java:202)<br />
-#x9;at org.apache.maven.plugins.checkstyle.AbstractCheckstyleReport.executeReport(AbstractCheckstyleReport.java:533)<br />
-#x9;at org.apache.maven.plugins.checkstyle.CheckstyleReport.executeReport(CheckstyleReport.java:57)<br />
-#x9;at org.apache.maven.reporting.AbstractMavenReport.generate(AbstractMavenReport.java:255)<br />
-#x9;at org.apache.maven.plugins.site.ReportDocumentRenderer.renderDocument(ReportDocumentRenderer.java:219)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.renderModule(DefaultSiteRenderer.java:319)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.render(DefaultSiteRenderer.java:135)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.renderLocale(SiteMojo.java:175)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.execute(SiteMojo.java:138)<br />
-#x9;at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)<br />
-#x9;at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)<br />
-#x9;at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)<br />
-#x9;at org.apache.maven.cli.MavenCli.execute(MavenCli.java:957)<br />
-#x9;at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:289)<br />
-#x9;at org.apache.maven.cli.MavenCli.main(MavenCli.java:193)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-#x9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-#x9;at java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)<br />
-Caused by: java.lang.IllegalStateException: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/javadocpropertiesgenerator/InputJavadocPropertiesGeneratorParseError.java:9:1: expecting RCURLY, found &#39;!&#39;<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser$1.reportError(JavaParser.java:108)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.typeDefinition(GeneratedJavaRecognizer.java:424)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:212)<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:114)<br />
-#x9;... 36 more<br />
-Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/javadocpropertiesgenerator/InputJavadocPropertiesGeneratorParseError.java:9:1: expecting RCURLY, found &#39;!&#39;<br />
-#x9;at antlr.Parser.match(Parser.java:211)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.classBlock(GeneratedJavaRecognizer.java:3437)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.classDefinition(GeneratedJavaRecognizer.java:646)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.typeDefinitionInternal(GeneratedJavaRecognizer.java:561)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.typeDefinition(GeneratedJavaRecognizer.java:402)<br />
-#x9;... 38 more<br />
-</td>
-								
-									
-									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/javadocpropertiesgenerator/InputJavadocPropertiesGeneratorParseError.java.html#L1">1</a></td>
-								
-								
-									<td class="keepWidth"> </td>
-									
-								
-							</tr>
-						
-					</table>
-				</div>
-				<div class="section">
-					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/javaparser/InputJavaParser.java</h3>
-					<tr class="b">
-					<table border="0" class="bodyTable">
-					        <th></th>
-							<th>Severity</th>
-							<th>Rule</th>
-							<th>Message</th>
-							<th>Line</th>
-							<th>Col</th>
-						</tr>
-						
-							
-								<tr class="a">
-							
-								<td class="keepWidth"><a name="A8" href = "#A8">#A8</a></td>
-								<td>error</td>
-								<td>Checker</td>
-								<td>Got an exception - com.puppycrawl.tools.checkstyle.api.CheckstyleException: NoViableAltException occurred while parsing file /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/javaparser/InputJavaParser.java.<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:120)<br />
-#x9;at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:152)<br />
-#x9;at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:87)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:328)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:289)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:221)<br />
-#x9;at org.apache.maven.plugins.checkstyle.exec.DefaultCheckstyleExecutor.executeCheckstyle(DefaultCheckstyleExecutor.java:202)<br />
-#x9;at org.apache.maven.plugins.checkstyle.AbstractCheckstyleReport.executeReport(AbstractCheckstyleReport.java:533)<br />
-#x9;at org.apache.maven.plugins.checkstyle.CheckstyleReport.executeReport(CheckstyleReport.java:57)<br />
-#x9;at org.apache.maven.reporting.AbstractMavenReport.generate(AbstractMavenReport.java:255)<br />
-#x9;at org.apache.maven.plugins.site.ReportDocumentRenderer.renderDocument(ReportDocumentRenderer.java:219)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.renderModule(DefaultSiteRenderer.java:319)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.render(DefaultSiteRenderer.java:135)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.renderLocale(SiteMojo.java:175)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.execute(SiteMojo.java:138)<br />
-#x9;at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)<br />
-#x9;at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)<br />
-#x9;at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)<br />
-#x9;at org.apache.maven.cli.MavenCli.execute(MavenCli.java:957)<br />
-#x9;at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:289)<br />
-#x9;at org.apache.maven.cli.MavenCli.main(MavenCli.java:193)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-#x9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-#x9;at java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)<br />
-Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/javaparser/InputJavaParser.java:2:1: unexpected token: classD<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:191)<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:114)<br />
-#x9;... 36 more<br />
-</td>
-								
-									
-									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/javaparser/InputJavaParser.java.html#L1">1</a></td>
-								
-								
-									<td class="keepWidth"> </td>
-									
-								
-							</tr>
-						
-					</table>
-				</div>
-				<div class="section">
-					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/main/InputMainIncorrectClass.java</h3>
-					<tr class="b">
-					<table border="0" class="bodyTable">
-					        <th></th>
-							<th>Severity</th>
-							<th>Rule</th>
-							<th>Message</th>
-							<th>Line</th>
-							<th>Col</th>
-						</tr>
-						
-							
-								<tr class="a">
-							
-								<td class="keepWidth"><a name="A9" href = "#A9">#A9</a></td>
-								<td>error</td>
-								<td>Checker</td>
-								<td>Got an exception - com.puppycrawl.tools.checkstyle.api.CheckstyleException: NoViableAltException occurred while parsing file /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/main/InputMainIncorrectClass.java.<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:120)<br />
-#x9;at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:152)<br />
-#x9;at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:87)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:328)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:289)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:221)<br />
-#x9;at org.apache.maven.plugins.checkstyle.exec.DefaultCheckstyleExecutor.executeCheckstyle(DefaultCheckstyleExecutor.java:202)<br />
-#x9;at org.apache.maven.plugins.checkstyle.AbstractCheckstyleReport.executeReport(AbstractCheckstyleReport.java:533)<br />
-#x9;at org.apache.maven.plugins.checkstyle.CheckstyleReport.executeReport(CheckstyleReport.java:57)<br />
-#x9;at org.apache.maven.reporting.AbstractMavenReport.generate(AbstractMavenReport.java:255)<br />
-#x9;at org.apache.maven.plugins.site.ReportDocumentRenderer.renderDocument(ReportDocumentRenderer.java:219)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.renderModule(DefaultSiteRenderer.java:319)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.render(DefaultSiteRenderer.java:135)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.renderLocale(SiteMojo.java:175)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.execute(SiteMojo.java:138)<br />
-#x9;at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)<br />
-#x9;at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)<br />
-#x9;at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)<br />
-#x9;at org.apache.maven.cli.MavenCli.execute(MavenCli.java:957)<br />
-#x9;at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:289)<br />
-#x9;at org.apache.maven.cli.MavenCli.main(MavenCli.java:193)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-#x9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-#x9;at java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)<br />
-Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/main/InputMainIncorrectClass.java:2:1: unexpected token: !<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:191)<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:114)<br />
-#x9;... 36 more<br />
-</td>
-								
-									
-									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/main/InputMainIncorrectClass.java.html#L1">1</a></td>
-								
-								
-									<td class="keepWidth"> </td>
-									
-								
-							</tr>
-						
-					</table>
-				</div>
-				<div class="section">
-					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/suppressionsstringprinter/InputSuppressionsStringPrinter.java</h3>
-					<tr class="b">
-					<table border="0" class="bodyTable">
-					        <th></th>
-							<th>Severity</th>
-							<th>Rule</th>
-							<th>Message</th>
-							<th>Line</th>
-							<th>Col</th>
-						</tr>
-						
-							
-								<tr class="a">
-							
-								<td class="keepWidth"><a name="A10" href = "#A10">#A10</a></td>
-								<td>error</td>
-								<td>Checker</td>
-								<td>Got an exception - com.puppycrawl.tools.checkstyle.api.CheckstyleException: NoViableAltException occurred while parsing file /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/suppressionsstringprinter/InputSuppressionsStringPrinter.java.<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:120)<br />
-#x9;at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:152)<br />
-#x9;at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:87)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:328)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:289)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:221)<br />
-#x9;at org.apache.maven.plugins.checkstyle.exec.DefaultCheckstyleExecutor.executeCheckstyle(DefaultCheckstyleExecutor.java:202)<br />
-#x9;at org.apache.maven.plugins.checkstyle.AbstractCheckstyleReport.executeReport(AbstractCheckstyleReport.java:533)<br />
-#x9;at org.apache.maven.plugins.checkstyle.CheckstyleReport.executeReport(CheckstyleReport.java:57)<br />
-#x9;at org.apache.maven.reporting.AbstractMavenReport.generate(AbstractMavenReport.java:255)<br />
-#x9;at org.apache.maven.plugins.site.ReportDocumentRenderer.renderDocument(ReportDocumentRenderer.java:219)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.renderModule(DefaultSiteRenderer.java:319)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.render(DefaultSiteRenderer.java:135)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.renderLocale(SiteMojo.java:175)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.execute(SiteMojo.java:138)<br />
-#x9;at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)<br />
-#x9;at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)<br />
-#x9;at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)<br />
-#x9;at org.apache.maven.cli.MavenCli.execute(MavenCli.java:957)<br />
-#x9;at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:289)<br />
-#x9;at org.apache.maven.cli.MavenCli.main(MavenCli.java:193)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-#x9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-#x9;at java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)<br />
-Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/suppressionsstringprinter/InputSuppressionsStringPrinter.java:2:1: unexpected token: classD<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:191)<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:114)<br />
-#x9;... 36 more<br />
-</td>
-								
-									
-									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/suppressionsstringprinter/InputSuppressionsStringPrinter.java.html#L1">1</a></td>
-								
-								
-									<td class="keepWidth"> </td>
-									
-								
-							</tr>
-						
-					</table>
-				</div>
-				<div class="section">
 					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources/com/puppycrawl/tools/checkstyle/checks/blocks/leftcurly/InputLeftCurlyEolSwitch.java</h3>
 					<tr class="b">
 					<table border="0" class="bodyTable">
@@ -805,7 +296,7 @@ Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkst
 							
 								<tr class="a">
 							
-								<td class="keepWidth"><a name="A11" href = "#A11">#A11</a></td>
+								<td class="keepWidth"><a name="A4" href = "#A4">#A4</a></td>
 								<td>warning</td>
 								<td>NoWhitespaceBeforeCaseDefaultColon</td>
 								<td>&#39;:&#39; should not be in a separate line.</td>
@@ -822,7 +313,7 @@ Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkst
 							
 								<tr class="a">
 							
-								<td class="keepWidth"><a name="A12" href = "#A12">#A12</a></td>
+								<td class="keepWidth"><a name="A5" href = "#A5">#A5</a></td>
 								<td>warning</td>
 								<td>NoWhitespaceBeforeCaseDefaultColon</td>
 								<td>&#39;:&#39; should not be in a separate line.</td>
@@ -853,7 +344,7 @@ Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkst
 							
 								<tr class="a">
 							
-								<td class="keepWidth"><a name="A13" href = "#A13">#A13</a></td>
+								<td class="keepWidth"><a name="A6" href = "#A6">#A6</a></td>
 								<td>warning</td>
 								<td>NoWhitespaceBeforeCaseDefaultColon</td>
 								<td>&#39;:&#39; should not be in a separate line.</td>
@@ -870,7 +361,7 @@ Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkst
 							
 								<tr class="a">
 							
-								<td class="keepWidth"><a name="A14" href = "#A14">#A14</a></td>
+								<td class="keepWidth"><a name="A7" href = "#A7">#A7</a></td>
 								<td>warning</td>
 								<td>NoWhitespaceBeforeCaseDefaultColon</td>
 								<td>&#39;:&#39; should not be in a separate line.</td>
@@ -887,7 +378,7 @@ Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkst
 							
 								<tr class="a">
 							
-								<td class="keepWidth"><a name="A15" href = "#A15">#A15</a></td>
+								<td class="keepWidth"><a name="A8" href = "#A8">#A8</a></td>
 								<td>warning</td>
 								<td>NoWhitespaceBeforeCaseDefaultColon</td>
 								<td>&#39;:&#39; should not be in a separate line.</td>
@@ -918,7 +409,7 @@ Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkst
 							
 								<tr class="a">
 							
-								<td class="keepWidth"><a name="A16" href = "#A16">#A16</a></td>
+								<td class="keepWidth"><a name="A9" href = "#A9">#A9</a></td>
 								<td>warning</td>
 								<td>NoWhitespaceBeforeCaseDefaultColon</td>
 								<td>&#39;:&#39; should not be in a separate line.</td>
@@ -935,7 +426,7 @@ Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkst
 							
 								<tr class="a">
 							
-								<td class="keepWidth"><a name="A17" href = "#A17">#A17</a></td>
+								<td class="keepWidth"><a name="A10" href = "#A10">#A10</a></td>
 								<td>warning</td>
 								<td>NoWhitespaceBeforeCaseDefaultColon</td>
 								<td>&#39;:&#39; should not be in a separate line.</td>
@@ -966,7 +457,7 @@ Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkst
 							
 								<tr class="a">
 							
-								<td class="keepWidth"><a name="A18" href = "#A18">#A18</a></td>
+								<td class="keepWidth"><a name="A11" href = "#A11">#A11</a></td>
 								<td>warning</td>
 								<td>NoWhitespaceBeforeCaseDefaultColon</td>
 								<td>&#39;:&#39; is preceded with whitespace.</td>
@@ -983,7 +474,7 @@ Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkst
 							
 								<tr class="a">
 							
-								<td class="keepWidth"><a name="A19" href = "#A19">#A19</a></td>
+								<td class="keepWidth"><a name="A12" href = "#A12">#A12</a></td>
 								<td>warning</td>
 								<td>NoWhitespaceBeforeCaseDefaultColon</td>
 								<td>&#39;:&#39; is preceded with whitespace.</td>
@@ -1014,7 +505,7 @@ Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkst
 							
 								<tr class="a">
 							
-								<td class="keepWidth"><a name="A20" href = "#A20">#A20</a></td>
+								<td class="keepWidth"><a name="A13" href = "#A13">#A13</a></td>
 								<td>warning</td>
 								<td>NoWhitespaceBeforeCaseDefaultColon</td>
 								<td>&#39;:&#39; is preceded with whitespace.</td>
@@ -1031,7 +522,7 @@ Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/checkst
 							
 								<tr class="a">
 							
-								<td class="keepWidth"><a name="A21" href = "#A21">#A21</a></td>
+								<td class="keepWidth"><a name="A14" href = "#A14">#A14</a></td>
 								<td>warning</td>
 								<td>NoWhitespaceBeforeCaseDefaultColon</td>
 								<td>&#39;:&#39; is preceded with whitespace.</td>

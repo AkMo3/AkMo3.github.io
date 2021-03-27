@@ -8,6 +8,10 @@
    <!-- haltOnException is required for exception fixes and reporting of all exceptions -->
    <property name="haltOnException" value="false"/>
    <!-- BeforeExecutionFileFilters is required for sources of java9 -->
+    <module name="SuppressionSingleFilter">
+        <property name="message" value="Exception occurred while parsing"/>
+        <property name="checks" value="Checker"/>
+    </module>	
    <module name="BeforeExecutionExclusionFileFilter">
       <property name="fileNamePattern" value="module\-info\.java$"/>
    </module>

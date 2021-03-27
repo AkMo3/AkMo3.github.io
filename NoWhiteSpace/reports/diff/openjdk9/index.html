@@ -58,6 +58,33 @@
 									
 										
 									<tr>
+										<td class="c">SuppressionSingleFilter</td>
+										
+										
+										<td> </td>
+										<td class="a">
+											
+												checks
+												
+													<li>Checker</li>
+												
+												<br/>
+											
+												message
+												
+													<li>Exception occurred while parsing</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
 										<td class="c">BeforeExecutionExclusionFileFilter</td>
 										
 										
@@ -124,8 +151,6 @@
 							
 								<th>Severity-warning</th>
 							
-								<th>Severity-error</th>
-							
 						</tr>
 						<tr class="b">
 							<td>base</td>
@@ -134,27 +159,21 @@
 							
 								<td id="warningSeverityNumBase">0</td>
 							
-								<td id="errorSeverityNumBase">0</td>
-							
 						</tr>
 						<tr class="a">
 							<td>patch</td>
 							<td id="filesPatch">19945</td>
-							<td id="totalPatch">525 (525 added)</td>
+							<td id="totalPatch">522 (522 added)</td>
 							
 								<td id="warningSeverityStatisticsPatch">522 (522 added)</td>
-							
-								<td id="errorSeverityStatisticsPatch">3 (3 added)</td>
 							
 						</tr>
 						<tr class="d">
 							<td/>
-							<td id="filesDiff">87 files with differences</td>
-							<td id="totalDiff">525 changes in violations</td>
+							<td id="filesDiff">84 files with differences</td>
+							<td id="totalDiff">522 changes in violations</td>
 							
 								<td id="warningSeverityNumDiff">522 changes in violations</td>
-							
-								<td id="errorSeverityNumDiff">3 changes in violations</td>
 							
 						<tr>
 					</table>
@@ -165,15 +184,11 @@
 							<tr class="a">
 								<th>Report id</th>
 								
-									<th>com.puppycrawl.tools.checkstyle.Checker</th>
-								
 									<th>com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCaseDefaultColonCheck</th>
 								
 							</tr>
 							<tr class="b">
 								<td>base</td>
-								
-									<td id="com.puppycrawl.tools.checkstyle.CheckerModuleNumBase">0</td>
 								
 									<td id="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCaseDefaultColonCheckModuleNumBase">0</td>
 								
@@ -181,15 +196,11 @@
 							<tr class="a">
 								<td>patch</td>
 								
-									<td id="com.puppycrawl.tools.checkstyle.CheckerModuleStatisticsPatch">3 (3 added)</td>
-								
 									<td id="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCaseDefaultColonCheckModuleStatisticsPatch">522 (522 added)</td>
 								
 							</tr>
 							<tr class="d">
 								<td>changes in violations</td>
-								
-									<td id="com.puppycrawl.tools.checkstyle.CheckerModuleNumDiff">3</td>
 								
 									<td id="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCaseDefaultColonCheckModuleNumDiff">522</td>
 								
@@ -199,7 +210,7 @@
 
 					<br />
 					Number of unique base messages reported below: <span id="uniqueMessagesBase">0</span><br />
-					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">525</span><br />
+					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">522</span><br />
 				</div>
 			</div>
 
@@ -10174,88 +10185,6 @@
 					</table>
 				</div>
 				<div class="section">
-					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/openjdk9/test/javax/xml/bind/jxc/8073519/InputWithError.java</h3>
-					<tr class="b">
-					<table border="0" class="bodyTable">
-					        <th></th>
-							<th>Severity</th>
-							<th>Rule</th>
-							<th>Message</th>
-							<th>Line</th>
-							<th>Col</th>
-						</tr>
-						
-							
-								<tr class="a">
-							
-								<td class="keepWidth"><a name="A519" href = "#A519">#A519</a></td>
-								<td>error</td>
-								<td>Checker</td>
-								<td>Got an exception - com.puppycrawl.tools.checkstyle.api.CheckstyleException: IllegalStateException occurred while parsing file /home/akmo/GitHub/contribution/checkstyle-tester/repositories/openjdk9/test/javax/xml/bind/jxc/8073519/InputWithError.java.<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:120)<br />
-#x9;at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:152)<br />
-#x9;at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:87)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:328)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:289)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:221)<br />
-#x9;at org.apache.maven.plugins.checkstyle.exec.DefaultCheckstyleExecutor.executeCheckstyle(DefaultCheckstyleExecutor.java:202)<br />
-#x9;at org.apache.maven.plugins.checkstyle.AbstractCheckstyleReport.executeReport(AbstractCheckstyleReport.java:533)<br />
-#x9;at org.apache.maven.plugins.checkstyle.CheckstyleReport.executeReport(CheckstyleReport.java:57)<br />
-#x9;at org.apache.maven.reporting.AbstractMavenReport.generate(AbstractMavenReport.java:255)<br />
-#x9;at org.apache.maven.plugins.site.ReportDocumentRenderer.renderDocument(ReportDocumentRenderer.java:219)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.renderModule(DefaultSiteRenderer.java:319)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.render(DefaultSiteRenderer.java:135)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.renderLocale(SiteMojo.java:175)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.execute(SiteMojo.java:138)<br />
-#x9;at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)<br />
-#x9;at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)<br />
-#x9;at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)<br />
-#x9;at org.apache.maven.cli.MavenCli.execute(MavenCli.java:957)<br />
-#x9;at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:289)<br />
-#x9;at org.apache.maven.cli.MavenCli.main(MavenCli.java:193)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-#x9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-#x9;at java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)<br />
-Caused by: java.lang.IllegalStateException: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/openjdk9/test/javax/xml/bind/jxc/8073519/InputWithError.java:28:10: unexpected token: compile<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser$1.reportError(JavaParser.java:108)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.typeDefinition(GeneratedJavaRecognizer.java:424)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:212)<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:114)<br />
-#x9;... 36 more<br />
-Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/openjdk9/test/javax/xml/bind/jxc/8073519/InputWithError.java:28:10: unexpected token: compile<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.field(GeneratedJavaRecognizer.java:3213)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.classBlock(GeneratedJavaRecognizer.java:3415)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.classDefinition(GeneratedJavaRecognizer.java:646)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.typeDefinitionInternal(GeneratedJavaRecognizer.java:561)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.typeDefinition(GeneratedJavaRecognizer.java:402)<br />
-#x9;... 38 more<br />
-</td>
-								
-									
-									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/openjdk9/test/javax/xml/bind/jxc/8073519/InputWithError.java.html#L1">1</a></td>
-								
-								
-									<td class="keepWidth"> </td>
-									
-								
-							</tr>
-						
-					</table>
-				</div>
-				<div class="section">
 					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/openjdk9/test/sun/net/www/protocol/http/NoNTLM.java</h3>
 					<tr class="b">
 					<table border="0" class="bodyTable">
@@ -10270,7 +10199,7 @@ Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/openjdk
 							
 								<tr class="a">
 							
-								<td class="keepWidth"><a name="A520" href = "#A520">#A520</a></td>
+								<td class="keepWidth"><a name="A519" href = "#A519">#A519</a></td>
 								<td>warning</td>
 								<td>NoWhitespaceBeforeCaseDefaultColon</td>
 								<td>&#39;:&#39; is preceded with whitespace.</td>
@@ -10287,7 +10216,7 @@ Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/openjdk
 							
 								<tr class="a">
 							
-								<td class="keepWidth"><a name="A521" href = "#A521">#A521</a></td>
+								<td class="keepWidth"><a name="A520" href = "#A520">#A520</a></td>
 								<td>warning</td>
 								<td>NoWhitespaceBeforeCaseDefaultColon</td>
 								<td>&#39;:&#39; is preceded with whitespace.</td>
@@ -10304,7 +10233,7 @@ Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/openjdk
 							
 								<tr class="a">
 							
-								<td class="keepWidth"><a name="A522" href = "#A522">#A522</a></td>
+								<td class="keepWidth"><a name="A521" href = "#A521">#A521</a></td>
 								<td>warning</td>
 								<td>NoWhitespaceBeforeCaseDefaultColon</td>
 								<td>&#39;:&#39; is preceded with whitespace.</td>
@@ -10321,7 +10250,7 @@ Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/openjdk
 							
 								<tr class="a">
 							
-								<td class="keepWidth"><a name="A523" href = "#A523">#A523</a></td>
+								<td class="keepWidth"><a name="A522" href = "#A522">#A522</a></td>
 								<td>warning</td>
 								<td>NoWhitespaceBeforeCaseDefaultColon</td>
 								<td>&#39;:&#39; is preceded with whitespace.</td>
@@ -10332,204 +10261,6 @@ Caused by: /home/akmo/GitHub/contribution/checkstyle-tester/repositories/openjdk
 								
 									
 									<td class="keepWidth">25</td>
-								
-							</tr>
-						
-					</table>
-				</div>
-				<div class="section">
-					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/openjdk9/test/sun/tools/jhsdb/HeapDumpTest.java</h3>
-					<tr class="b">
-					<table border="0" class="bodyTable">
-					        <th></th>
-							<th>Severity</th>
-							<th>Rule</th>
-							<th>Message</th>
-							<th>Line</th>
-							<th>Col</th>
-						</tr>
-						
-							
-								<tr class="a">
-							
-								<td class="keepWidth"><a name="A524" href = "#A524">#A524</a></td>
-								<td>error</td>
-								<td>Checker</td>
-								<td>Got an exception - com.puppycrawl.tools.checkstyle.api.CheckstyleException: TokenStreamRecognitionException occurred while parsing file /home/akmo/GitHub/contribution/checkstyle-tester/repositories/openjdk9/test/sun/tools/jhsdb/HeapDumpTest.java.<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:120)<br />
-#x9;at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:152)<br />
-#x9;at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:87)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:328)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:289)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:221)<br />
-#x9;at org.apache.maven.plugins.checkstyle.exec.DefaultCheckstyleExecutor.executeCheckstyle(DefaultCheckstyleExecutor.java:202)<br />
-#x9;at org.apache.maven.plugins.checkstyle.AbstractCheckstyleReport.executeReport(AbstractCheckstyleReport.java:533)<br />
-#x9;at org.apache.maven.plugins.checkstyle.CheckstyleReport.executeReport(CheckstyleReport.java:57)<br />
-#x9;at org.apache.maven.reporting.AbstractMavenReport.generate(AbstractMavenReport.java:255)<br />
-#x9;at org.apache.maven.plugins.site.ReportDocumentRenderer.renderDocument(ReportDocumentRenderer.java:219)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.renderModule(DefaultSiteRenderer.java:319)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.render(DefaultSiteRenderer.java:135)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.renderLocale(SiteMojo.java:175)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.execute(SiteMojo.java:138)<br />
-#x9;at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)<br />
-#x9;at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)<br />
-#x9;at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)<br />
-#x9;at org.apache.maven.cli.MavenCli.execute(MavenCli.java:957)<br />
-#x9;at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:289)<br />
-#x9;at org.apache.maven.cli.MavenCli.main(MavenCli.java:193)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-#x9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-#x9;at java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)<br />
-Caused by: line 63:39: unexpected char: &#39;\&#39;<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaLexer.nextToken(GeneratedJavaLexer.java:412)<br />
-#x9;at antlr.TokenStreamHiddenTokenFilter.consume(TokenStreamHiddenTokenFilter.java:38)<br />
-#x9;at antlr.TokenStreamHiddenTokenFilter.nextToken(TokenStreamHiddenTokenFilter.java:134)<br />
-#x9;at antlr.TokenStreamSelector.nextToken(TokenStreamSelector.java:65)<br />
-#x9;at antlr.TokenBuffer.fill(TokenBuffer.java:69)<br />
-#x9;at antlr.TokenBuffer.LA(TokenBuffer.java:80)<br />
-#x9;at antlr.LLkParser.LA(LLkParser.java:52)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.expression(GeneratedJavaRecognizer.java:5315)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.expressionList(GeneratedJavaRecognizer.java:7171)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.argList(GeneratedJavaRecognizer.java:4044)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.postfixExpression(GeneratedJavaRecognizer.java:8844)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.castExpression(GeneratedJavaRecognizer.java:8555)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.unaryExpressionNotPlusMinus(GeneratedJavaRecognizer.java:8411)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.unaryExpression(GeneratedJavaRecognizer.java:8341)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.multiplicativeExpression(GeneratedJavaRecognizer.java:8202)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.additiveExpression(GeneratedJavaRecognizer.java:8153)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.shiftExpression(GeneratedJavaRecognizer.java:8031)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.relationalExpression(GeneratedJavaRecognizer.java:7919)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.equalityExpression(GeneratedJavaRecognizer.java:7870)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.andExpression(GeneratedJavaRecognizer.java:7841)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.exclusiveOrExpression(GeneratedJavaRecognizer.java:7812)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.inclusiveOrExpression(GeneratedJavaRecognizer.java:7783)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.logicalAndExpression(GeneratedJavaRecognizer.java:7754)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.logicalOrExpression(GeneratedJavaRecognizer.java:7725)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.conditionalExpression(GeneratedJavaRecognizer.java:2356)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.assignmentExpression(GeneratedJavaRecognizer.java:7474)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.expression(GeneratedJavaRecognizer.java:5336)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.traditionalStatement(GeneratedJavaRecognizer.java:5980)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.statement(GeneratedJavaRecognizer.java:4815)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compoundStatement(GeneratedJavaRecognizer.java:4544)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.tryBlock(GeneratedJavaRecognizer.java:6262)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.traditionalStatement(GeneratedJavaRecognizer.java:5872)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.statement(GeneratedJavaRecognizer.java:4815)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compoundStatement(GeneratedJavaRecognizer.java:4544)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.field(GeneratedJavaRecognizer.java:3158)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.classBlock(GeneratedJavaRecognizer.java:3415)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.classDefinition(GeneratedJavaRecognizer.java:646)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.typeDefinitionInternal(GeneratedJavaRecognizer.java:561)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.typeDefinition(GeneratedJavaRecognizer.java:402)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:212)<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:114)<br />
-#x9;... 36 more<br />
-</td>
-								
-									
-									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/openjdk9/test/sun/tools/jhsdb/HeapDumpTest.java.html#L1">1</a></td>
-								
-								
-									<td class="keepWidth"> </td>
-									
-								
-							</tr>
-						
-					</table>
-				</div>
-				<div class="section">
-					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/openjdk9/test/sun/tools/jhsdb/LingeredAppWithExtendedChars.java</h3>
-					<tr class="b">
-					<table border="0" class="bodyTable">
-					        <th></th>
-							<th>Severity</th>
-							<th>Rule</th>
-							<th>Message</th>
-							<th>Line</th>
-							<th>Col</th>
-						</tr>
-						
-							
-								<tr class="a">
-							
-								<td class="keepWidth"><a name="A525" href = "#A525">#A525</a></td>
-								<td>error</td>
-								<td>Checker</td>
-								<td>Got an exception - com.puppycrawl.tools.checkstyle.api.CheckstyleException: TokenStreamRecognitionException occurred while parsing file /home/akmo/GitHub/contribution/checkstyle-tester/repositories/openjdk9/test/sun/tools/jhsdb/LingeredAppWithExtendedChars.java.<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:120)<br />
-#x9;at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:152)<br />
-#x9;at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:87)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:328)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:289)<br />
-#x9;at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:221)<br />
-#x9;at org.apache.maven.plugins.checkstyle.exec.DefaultCheckstyleExecutor.executeCheckstyle(DefaultCheckstyleExecutor.java:202)<br />
-#x9;at org.apache.maven.plugins.checkstyle.AbstractCheckstyleReport.executeReport(AbstractCheckstyleReport.java:533)<br />
-#x9;at org.apache.maven.plugins.checkstyle.CheckstyleReport.executeReport(CheckstyleReport.java:57)<br />
-#x9;at org.apache.maven.reporting.AbstractMavenReport.generate(AbstractMavenReport.java:255)<br />
-#x9;at org.apache.maven.plugins.site.ReportDocumentRenderer.renderDocument(ReportDocumentRenderer.java:219)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.renderModule(DefaultSiteRenderer.java:319)<br />
-#x9;at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.render(DefaultSiteRenderer.java:135)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.renderLocale(SiteMojo.java:175)<br />
-#x9;at org.apache.maven.plugins.site.SiteMojo.execute(SiteMojo.java:138)<br />
-#x9;at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)<br />
-#x9;at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)<br />
-#x9;at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)<br />
-#x9;at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)<br />
-#x9;at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)<br />
-#x9;at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)<br />
-#x9;at org.apache.maven.cli.MavenCli.execute(MavenCli.java:957)<br />
-#x9;at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:289)<br />
-#x9;at org.apache.maven.cli.MavenCli.main(MavenCli.java:193)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-#x9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-#x9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-#x9;at java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)<br />
-#x9;at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)<br />
-Caused by: line 27:23: unexpected char: &#39;\&#39;<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaLexer.nextToken(GeneratedJavaLexer.java:412)<br />
-#x9;at antlr.TokenStreamHiddenTokenFilter.consume(TokenStreamHiddenTokenFilter.java:38)<br />
-#x9;at antlr.TokenStreamHiddenTokenFilter.nextToken(TokenStreamHiddenTokenFilter.java:134)<br />
-#x9;at antlr.TokenStreamSelector.nextToken(TokenStreamSelector.java:65)<br />
-#x9;at antlr.TokenBuffer.fill(TokenBuffer.java:69)<br />
-#x9;at antlr.TokenBuffer.LA(TokenBuffer.java:80)<br />
-#x9;at antlr.LLkParser.LA(LLkParser.java:52)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.modifiers(GeneratedJavaRecognizer.java:524)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.field(GeneratedJavaRecognizer.java:3057)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.classBlock(GeneratedJavaRecognizer.java:3415)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.classDefinition(GeneratedJavaRecognizer.java:646)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.typeDefinitionInternal(GeneratedJavaRecognizer.java:561)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.typeDefinition(GeneratedJavaRecognizer.java:402)<br />
-#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:212)<br />
-#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:114)<br />
-#x9;... 36 more<br />
-</td>
-								
-									
-									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/openjdk9/test/sun/tools/jhsdb/LingeredAppWithExtendedChars.java.html#L1">1</a></td>
-								
-								
-									<td class="keepWidth"> </td>
-									
 								
 							</tr>
 						
