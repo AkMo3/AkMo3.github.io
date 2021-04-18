@@ -19,7 +19,10 @@
    <module name="TreeWalker">
      <module name="MissingJavadocMethod">
             <property name="scope" value="protected"/>
-        </module>
-   </module>
-   <module name="BeforeExecutionExclusionFileFilter"/>
+     </module>
+     <module name="MissingJavadocMethod">
+            <property name="scope" value="public"/>
+     </module>
+  </module>
+  <module name="BeforeExecutionExclusionFileFilter"/>
 </module>
