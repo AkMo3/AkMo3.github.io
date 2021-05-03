@@ -1,0 +1,1750 @@
+<html>
+	<head>
+		<title>checkstyle xml difference report</title>
+		<style type="text/css" media="all">@import url("./css/maven-base.css");@import url("./css/maven-theme.css"); );</style>
+		<link rel="stylesheet" href="./css/site.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<http-equiv http-equiv="Content-Language" content="en"></http-equiv>
+	</head>
+	<body class="composite">
+		<div id="contentBox">
+			<div class="section">
+				<h2 a="Checkstyle XML difference report">Checkstyle XML difference report</h2>
+				This is symmetric difference generated from two checkstyle-result.xml reports. <br/>
+				All matching records from each XML file are deleted, then remaining records are merged into single report. <br>
+		        <a href="https://github.com/checkstyle/contribution/tree/master/patch-diff-report-tool">Utility that generated this report.</a>
+			</div>
+
+			
+				<h2 a="Checkstyle configuration report">Checkstyle configuration report</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+							<tr class="a">
+								<th>Module Name</th>
+								<th>Base properties</th>
+								<th>Patch properties</th>
+							</tr>
+							
+								
+									<tr>
+										<td class="c">Checker</td>
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">BeforeExecutionExclusionFileFilter</td>
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">SuppressionSingleFilter</td>
+										
+										<td class="c">
+											
+												checks
+												
+													<li>Checker</li>
+												
+												<br/>
+											
+												message
+												
+													<li>Exception occurred while parsing</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												checks
+												
+													<li>Checker</li>
+												
+												<br/>
+											
+												message
+												
+													<li>Exception occurred while parsing</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">TreeWalker</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">MissingJavadocMethod</td>
+										
+										<td class="c">
+											
+												scope
+												
+													<li>protected</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												scope
+												
+													<li>protected</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">MissingJavadocMethod</td>
+										
+										<td class="c">
+											
+												scope
+												
+													<li>public</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												scope
+												
+													<li>public</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+								
+									
+										
+									<tr>
+										<td class="c">BeforeExecutionExclusionFileFilter</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+								
+								
+					</table>	
+				</div>
+			
+
+			<div class="section">
+				<h2 a="Summary:">Summary:</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+						<tr class="a">
+							<th>Report id</th>
+							<th>Files</th>
+							<th>Violations</th>
+							
+								<th>Severity-warning</th>
+							
+						</tr>
+						<tr class="b">
+							<td>base</td>
+							<td id="filesBase">6386</td>
+							<td id="totalBase">31134</td>
+							
+								<td id="warningSeverityNumBase">31134</td>
+							
+						</tr>
+						<tr class="a">
+							<td>patch</td>
+							<td id="filesPatch">6386</td>
+							<td id="totalPatch">31198 (64 added)</td>
+							
+								<td id="warningSeverityStatisticsPatch">31198 (64 added)</td>
+							
+						</tr>
+						<tr class="d">
+							<td/>
+							<td id="filesDiff">24 files with differences</td>
+							<td id="totalDiff">64 changes in violations</td>
+							
+								<td id="warningSeverityNumDiff">64 changes in violations</td>
+							
+						<tr>
+					</table>
+
+					
+						<br />
+						<table border="0" class="bodyTable">
+							<tr class="a">
+								<th>Report id</th>
+								
+									<th>com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck</th>
+								
+							</tr>
+							<tr class="b">
+								<td>base</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheckModuleNumBase">31134</td>
+								
+							</tr>
+							<tr class="a">
+								<td>patch</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheckModuleStatisticsPatch">31198 (64 added)</td>
+								
+							</tr>
+							<tr class="d">
+								<td>changes in violations</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheckModuleNumDiff">64</td>
+								
+							<tr>
+						</table>
+					
+
+					<br />
+					Number of unique base messages reported below: <span id="uniqueMessagesBase">0</span><br />
+					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">64</span><br />
+				</div>
+			</div>
+
+			<div class="section">
+				<h2 a="Violations:">Violations:</h2>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/bytecode/enhance/spi/Enhancer.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A1" href = "#A1">#A1</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/bytecode/enhance/spi/Enhancer.java.html#L1080">1080</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A2" href = "#A2">#A2</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/bytecode/enhance/spi/Enhancer.java.html#L1081">1081</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A3" href = "#A3">#A3</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/bytecode/enhance/spi/Enhancer.java.html#L1082">1082</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/bytecode/instrumentation/internal/FieldInterceptionHelper.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A4" href = "#A4">#A4</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/bytecode/instrumentation/internal/FieldInterceptionHelper.java.html#L104">104</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A5" href = "#A5">#A5</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/bytecode/instrumentation/internal/FieldInterceptionHelper.java.html#L105">105</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A6" href = "#A6">#A6</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/bytecode/instrumentation/internal/FieldInterceptionHelper.java.html#L106">106</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/cfg/HbmBinder.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A7" href = "#A7">#A7</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/cfg/HbmBinder.java.html#L3251">3251</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/dialect/function/DerbyConcatFunction.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A8" href = "#A8">#A8</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/dialect/function/DerbyConcatFunction.java.html#L142">142</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/hql/internal/ast/SqlGenerator.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A9" href = "#A9">#A9</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/hql/internal/ast/SqlGenerator.java.html#L236">236</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A10" href = "#A10">#A10</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/hql/internal/ast/SqlGenerator.java.html#L238">238</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A11" href = "#A11">#A11</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/hql/internal/ast/SqlGenerator.java.html#L242">242</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/hql/internal/ast/util/LiteralProcessor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A12" href = "#A12">#A12</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/hql/internal/ast/util/LiteralProcessor.java.html#L284">284</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/internal/SQLQueryImpl.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A13" href = "#A13">#A13</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/internal/SQLQueryImpl.java.html#L512">512</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/internal/util/collections/ConcurrentReferenceHashMap.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A14" href = "#A14">#A14</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/internal/util/collections/ConcurrentReferenceHashMap.java.html#L306">306</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A15" href = "#A15">#A15</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/internal/util/collections/ConcurrentReferenceHashMap.java.html#L308">308</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/loader/criteria/CriteriaInfoProvider.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A16" href = "#A16">#A16</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/loader/criteria/CriteriaInfoProvider.java.html#L37">37</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A17" href = "#A17">#A17</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/loader/criteria/CriteriaInfoProvider.java.html#L38">38</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A18" href = "#A18">#A18</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/loader/criteria/CriteriaInfoProvider.java.html#L39">39</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A19" href = "#A19">#A19</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/loader/criteria/CriteriaInfoProvider.java.html#L40">40</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/loader/custom/CustomLoader.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A20" href = "#A20">#A20</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/loader/custom/CustomLoader.java.html#L546">546</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A21" href = "#A21">#A21</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/loader/custom/CustomLoader.java.html#L547">547</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/loader/custom/sql/SQLQueryParser.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A22" href = "#A22">#A22</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/loader/custom/sql/SQLQueryParser.java.html#L57">57</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A23" href = "#A23">#A23</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/loader/custom/sql/SQLQueryParser.java.html#L58">58</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A24" href = "#A24">#A24</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/loader/custom/sql/SQLQueryParser.java.html#L59">59</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A25" href = "#A25">#A25</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/loader/custom/sql/SQLQueryParser.java.html#L60">60</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A26" href = "#A26">#A26</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/loader/custom/sql/SQLQueryParser.java.html#L61">61</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A27" href = "#A27">#A27</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/loader/custom/sql/SQLQueryParser.java.html#L62">62</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A28" href = "#A28">#A28</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/loader/custom/sql/SQLQueryParser.java.html#L63">63</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/metamodel/source/annotations/xml/mocker/AnnotationMocker.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A29" href = "#A29">#A29</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/metamodel/source/annotations/xml/mocker/AnnotationMocker.java.html#L419">419</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/metamodel/source/annotations/xml/mocker/DefaultConfigurationHelper.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A30" href = "#A30">#A30</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/metamodel/source/annotations/xml/mocker/DefaultConfigurationHelper.java.html#L296">296</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A31" href = "#A31">#A31</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/metamodel/source/annotations/xml/mocker/DefaultConfigurationHelper.java.html#L298">298</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A32" href = "#A32">#A32</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/metamodel/source/annotations/xml/mocker/DefaultConfigurationHelper.java.html#L300">300</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A33" href = "#A33">#A33</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/metamodel/source/annotations/xml/mocker/DefaultConfigurationHelper.java.html#L302">302</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/metamodel/source/annotations/xml/mocker/SchemaAware.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A34" href = "#A34">#A34</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/metamodel/source/annotations/xml/mocker/SchemaAware.java.html#L35">35</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A35" href = "#A35">#A35</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/metamodel/source/annotations/xml/mocker/SchemaAware.java.html#L37">37</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A36" href = "#A36">#A36</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/metamodel/source/annotations/xml/mocker/SchemaAware.java.html#L39">39</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A37" href = "#A37">#A37</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/metamodel/source/annotations/xml/mocker/SchemaAware.java.html#L41">41</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/secure/internal/JACCPermissions.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A38" href = "#A38">#A38</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/secure/internal/JACCPermissions.java.html#L113">113</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/tool/hbm2ddl/Exporter.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A39" href = "#A39">#A39</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/tool/hbm2ddl/Exporter.java.html#L30">30</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A40" href = "#A40">#A40</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/tool/hbm2ddl/Exporter.java.html#L31">31</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A41" href = "#A41">#A41</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/tool/hbm2ddl/Exporter.java.html#L32">32</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/tuple/entity/AbstractEntityTuplizer.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A42" href = "#A42">#A42</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/tuple/entity/AbstractEntityTuplizer.java.html#L392">392</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A43" href = "#A43">#A43</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/tuple/entity/AbstractEntityTuplizer.java.html#L393">393</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/type/EnumType.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A44" href = "#A44">#A44</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/type/EnumType.java.html#L330">330</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A45" href = "#A45">#A45</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/type/EnumType.java.html#L331">331</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A46" href = "#A46">#A46</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/type/EnumType.java.html#L332">332</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A47" href = "#A47">#A47</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/type/EnumType.java.html#L334">334</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A48" href = "#A48">#A48</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/type/EnumType.java.html#L335">335</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A49" href = "#A49">#A49</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/main/java/org/hibernate/type/EnumType.java.html#L336">336</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/test/java/org/hibernate/jdbc/LobCreatorTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A50" href = "#A50">#A50</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/test/java/org/hibernate/jdbc/LobCreatorTest.java.html#L173">173</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A51" href = "#A51">#A51</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/test/java/org/hibernate/jdbc/LobCreatorTest.java.html#L174">174</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A52" href = "#A52">#A52</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/test/java/org/hibernate/jdbc/LobCreatorTest.java.html#L175">175</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/test/java/org/hibernate/test/cascade/circle/MultiPathCircleCascadeTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A53" href = "#A53">#A53</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/test/java/org/hibernate/test/cascade/circle/MultiPathCircleCascadeTest.java.html#L69">69</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/test/java/org/hibernate/test/classloader/ProxyInterfaceClassLoaderTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A54" href = "#A54">#A54</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/test/java/org/hibernate/test/classloader/ProxyInterfaceClassLoaderTest.java.html#L77">77</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A55" href = "#A55">#A55</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/test/java/org/hibernate/test/classloader/ProxyInterfaceClassLoaderTest.java.html#L79">79</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/test/java/org/hibernate/test/fetchprofiles/join/JoinFetchProfileTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A56" href = "#A56">#A56</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/test/java/org/hibernate/test/fetchprofiles/join/JoinFetchProfileTest.java.html#L62">62</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A57" href = "#A57">#A57</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/test/java/org/hibernate/test/fetchprofiles/join/JoinFetchProfileTest.java.html#L63">63</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A58" href = "#A58">#A58</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/test/java/org/hibernate/test/fetchprofiles/join/JoinFetchProfileTest.java.html#L64">64</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A59" href = "#A59">#A59</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/test/java/org/hibernate/test/fetchprofiles/join/JoinFetchProfileTest.java.html#L65">65</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A60" href = "#A60">#A60</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/test/java/org/hibernate/test/fetchprofiles/join/JoinFetchProfileTest.java.html#L66">66</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A61" href = "#A61">#A61</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/test/java/org/hibernate/test/fetchprofiles/join/JoinFetchProfileTest.java.html#L70">70</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/test/java/org/hibernate/test/hql/ASTParserLoadingTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A62" href = "#A62">#A62</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-core/src/test/java/org/hibernate/test/hql/ASTParserLoadingTest.java.html#L3596">3596</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-entitymanager/src/main/java/org/hibernate/ejb/metamodel/AttributeFactory.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A63" href = "#A63">#A63</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-entitymanager/src/main/java/org/hibernate/ejb/metamodel/AttributeFactory.java.html#L279">279</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A64" href = "#A64">#A64</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/hibernate-orm-with-excludes/hibernate-entitymanager/src/main/java/org/hibernate/ejb/metamodel/AttributeFactory.java.html#L425">425</a></td>
+								
+								
+									
+									<td class="keepWidth">17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

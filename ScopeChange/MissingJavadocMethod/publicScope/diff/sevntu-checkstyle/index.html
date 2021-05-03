@@ -1,0 +1,1179 @@
+<html>
+	<head>
+		<title>checkstyle xml difference report</title>
+		<style type="text/css" media="all">@import url("./css/maven-base.css");@import url("./css/maven-theme.css"); );</style>
+		<link rel="stylesheet" href="./css/site.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<http-equiv http-equiv="Content-Language" content="en"></http-equiv>
+	</head>
+	<body class="composite">
+		<div id="contentBox">
+			<div class="section">
+				<h2 a="Checkstyle XML difference report">Checkstyle XML difference report</h2>
+				This is symmetric difference generated from two checkstyle-result.xml reports. <br/>
+				All matching records from each XML file are deleted, then remaining records are merged into single report. <br>
+		        <a href="https://github.com/checkstyle/contribution/tree/master/patch-diff-report-tool">Utility that generated this report.</a>
+			</div>
+
+			
+				<h2 a="Checkstyle configuration report">Checkstyle configuration report</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+							<tr class="a">
+								<th>Module Name</th>
+								<th>Base properties</th>
+								<th>Patch properties</th>
+							</tr>
+							
+								
+									<tr>
+										<td class="c">Checker</td>
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">BeforeExecutionExclusionFileFilter</td>
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">SuppressionSingleFilter</td>
+										
+										<td class="c">
+											
+												checks
+												
+													<li>Checker</li>
+												
+												<br/>
+											
+												message
+												
+													<li>Exception occurred while parsing</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												checks
+												
+													<li>Checker</li>
+												
+												<br/>
+											
+												message
+												
+													<li>Exception occurred while parsing</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">TreeWalker</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">MissingJavadocMethod</td>
+										
+										<td class="c">
+											
+												scope
+												
+													<li>public</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												scope
+												
+													<li>public</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+								
+									
+										
+									<tr>
+										<td class="c">BeforeExecutionExclusionFileFilter</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+								
+								
+					</table>	
+				</div>
+			
+
+			<div class="section">
+				<h2 a="Summary:">Summary:</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+						<tr class="a">
+							<th>Report id</th>
+							<th>Files</th>
+							<th>Violations</th>
+							
+								<th>Severity-warning</th>
+							
+						</tr>
+						<tr class="b">
+							<td>base</td>
+							<td id="filesBase">371</td>
+							<td id="totalBase">903</td>
+							
+								<td id="warningSeverityNumBase">903</td>
+							
+						</tr>
+						<tr class="a">
+							<td>patch</td>
+							<td id="filesPatch">371</td>
+							<td id="totalPatch">945 (42 added)</td>
+							
+								<td id="warningSeverityStatisticsPatch">945 (42 added)</td>
+							
+						</tr>
+						<tr class="d">
+							<td/>
+							<td id="filesDiff">12 files with differences</td>
+							<td id="totalDiff">42 changes in violations</td>
+							
+								<td id="warningSeverityNumDiff">42 changes in violations</td>
+							
+						<tr>
+					</table>
+
+					
+						<br />
+						<table border="0" class="bodyTable">
+							<tr class="a">
+								<th>Report id</th>
+								
+									<th>com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck</th>
+								
+							</tr>
+							<tr class="b">
+								<td>base</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheckModuleNumBase">903</td>
+								
+							</tr>
+							<tr class="a">
+								<td>patch</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheckModuleStatisticsPatch">945 (42 added)</td>
+								
+							</tr>
+							<tr class="d">
+								<td>changes in violations</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheckModuleNumDiff">42</td>
+								
+							<tr>
+						</table>
+					
+
+					<br />
+					Number of unique base messages reported below: <span id="uniqueMessagesBase">0</span><br />
+					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">42</span><br />
+				</div>
+			</div>
+
+			<div class="section">
+				<h2 a="Violations:">Violations:</h2>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources-noncompilable/com/github/sevntu/checkstyle/checks/design/InputStaticMethodCandidateCheckInterfaceMethod.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A1" href = "#A1">#A1</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources-noncompilable/com/github/sevntu/checkstyle/checks/design/InputStaticMethodCandidateCheckInterfaceMethod.java.html#L9">9</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputCustomDeclarationOrderCheckGettersSetters.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A2" href = "#A2">#A2</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputCustomDeclarationOrderCheckGettersSetters.java.html#L189">189</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A3" href = "#A3">#A3</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputCustomDeclarationOrderCheckGettersSetters.java.html#L191">191</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputCustomDeclarationOrderCheckInnerInterfaceEnum.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A4" href = "#A4">#A4</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputCustomDeclarationOrderCheckInnerInterfaceEnum.java.html#L8">8</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A5" href = "#A5">#A5</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputCustomDeclarationOrderCheckInnerInterfaceEnum.java.html#L27">27</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A6" href = "#A6">#A6</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputCustomDeclarationOrderCheckInnerInterfaceEnum.java.html#L38">38</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A7" href = "#A7">#A7</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputCustomDeclarationOrderCheckInnerInterfaceEnum.java.html#L63">63</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputDiamondOperatorForVariableDefinitionCheck.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A8" href = "#A8">#A8</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputDiamondOperatorForVariableDefinitionCheck.java.html#L82">82</a></td>
+								
+								
+									
+									<td class="keepWidth">8</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputFinalizeImplementationCheck.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A9" href = "#A9">#A9</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputFinalizeImplementationCheck.java.html#L101">101</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A10" href = "#A10">#A10</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputFinalizeImplementationCheck.java.html#L102">102</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A11" href = "#A11">#A11</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputFinalizeImplementationCheck.java.html#L103">103</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputJsr305AnnotationsCheckWithClass.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A12" href = "#A12">#A12</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputJsr305AnnotationsCheckWithClass.java.html#L41">41</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A13" href = "#A13">#A13</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputJsr305AnnotationsCheckWithClass.java.html#L43">43</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A14" href = "#A14">#A14</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputJsr305AnnotationsCheckWithClass.java.html#L45">45</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A15" href = "#A15">#A15</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputJsr305AnnotationsCheckWithClass.java.html#L51">51</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A16" href = "#A16">#A16</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputJsr305AnnotationsCheckWithClass.java.html#L53">53</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A17" href = "#A17">#A17</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputJsr305AnnotationsCheckWithClass.java.html#L55">55</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A18" href = "#A18">#A18</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputJsr305AnnotationsCheckWithClass.java.html#L125">125</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A19" href = "#A19">#A19</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputJsr305AnnotationsCheckWithClass.java.html#L128">128</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A20" href = "#A20">#A20</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputJsr305AnnotationsCheckWithClass.java.html#L131">131</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A21" href = "#A21">#A21</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputJsr305AnnotationsCheckWithClass.java.html#L154">154</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A22" href = "#A22">#A22</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputJsr305AnnotationsCheckWithClass.java.html#L157">157</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A23" href = "#A23">#A23</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputJsr305AnnotationsCheckWithClass.java.html#L160">160</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputJsr305AnnotationsCheckWithInheritance.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A24" href = "#A24">#A24</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputJsr305AnnotationsCheckWithInheritance.java.html#L56">56</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A25" href = "#A25">#A25</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputJsr305AnnotationsCheckWithInheritance.java.html#L58">58</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A26" href = "#A26">#A26</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputJsr305AnnotationsCheckWithInheritance.java.html#L60">60</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputRedundantReturnCheckMethodInEmptyMethod.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A27" href = "#A27">#A27</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputRedundantReturnCheckMethodInEmptyMethod.java.html#L10">10</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputReturnCountExtendedCheckMethodsInMethods.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A28" href = "#A28">#A28</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputReturnCountExtendedCheckMethodsInMethods.java.html#L265">265</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A29" href = "#A29">#A29</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputReturnCountExtendedCheckMethodsInMethods.java.html#L279">279</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A30" href = "#A30">#A30</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputReturnCountExtendedCheckMethodsInMethods.java.html#L281">281</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputSimpleAccessorNameNotationCheck.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A31" href = "#A31">#A31</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/coding/InputSimpleAccessorNameNotationCheck.java.html#L84">84</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/design/InputForbidWildcardAsReturnTypeCheck.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A32" href = "#A32">#A32</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/design/InputForbidWildcardAsReturnTypeCheck.java.html#L278">278</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A33" href = "#A33">#A33</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/design/InputForbidWildcardAsReturnTypeCheck.java.html#L279">279</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A34" href = "#A34">#A34</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/design/InputForbidWildcardAsReturnTypeCheck.java.html#L280">280</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A35" href = "#A35">#A35</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/design/InputForbidWildcardAsReturnTypeCheck.java.html#L281">281</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A36" href = "#A36">#A36</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/design/InputForbidWildcardAsReturnTypeCheck.java.html#L282">282</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A37" href = "#A37">#A37</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/design/InputForbidWildcardAsReturnTypeCheck.java.html#L283">283</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A38" href = "#A38">#A38</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/design/InputForbidWildcardAsReturnTypeCheck.java.html#L284">284</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A39" href = "#A39">#A39</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/design/InputForbidWildcardAsReturnTypeCheck.java.html#L285">285</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A40" href = "#A40">#A40</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/design/InputForbidWildcardAsReturnTypeCheck.java.html#L286">286</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/naming/InputInterfaceTypeParameterNameCheck.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A41" href = "#A41">#A41</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/naming/InputInterfaceTypeParameterNameCheck.java.html#L10">10</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A42" href = "#A42">#A42</a></td>
+								<td>warning</td>
+								<td>MissingJavadocMethod</td>
+								<td>Missing a Javadoc comment.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/akmo/GitHub/contribution/checkstyle-tester/repositories/sevntu-checkstyle/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/naming/InputInterfaceTypeParameterNameCheck.java.html#L14">14</a></td>
+								
+								
+									
+									<td class="keepWidth">9</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
