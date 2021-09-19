@@ -19,7 +19,6 @@
     </module>
     <module name="TreeWalker">
         <module name="RedundantModifier">
-          <property name="id" value="defaultTokens"/>
           <property name="tokens" value="METHOD_DEF, VARIABLE_DEF, ANNOTATION_FIELD_DEF, 
            INTERFACE_DEF, CTOR_DEF, CLASS_DEF, ENUM_DEF, RESOURCE"/>
         </module>
