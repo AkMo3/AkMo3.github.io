@@ -49,3 +49,74 @@ body{
 
 }
 
+svg.vivacity {
+	font-family: 'Smooch', cursive;
+	position: absolute; 
+    font-size: 55vw;
+}
+
+svg.vivacity text {
+	text-transform: uppercase;
+	animation: vivaKeyStroke 2s infinite alternate;
+	stroke-width: 2;
+	stroke: white;
+	height: 55vw;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 8vw;
+	opacity: 01;
+	background-color: rgba(40, 8, 54, 0.685);
+	z-index: 2;
+}
+
+svg.status {
+	font-family: 'Smooch', cursive;
+	position: absolute; 
+    font-size: 40vw;
+    animation-delay: 2s;
+}
+
+svg.status text {
+    animation-delay: 2s;
+	animation: statusKeyStroke 2s infinite alternate;
+	stroke-width: 2;
+	stroke: transparent;
+	height: 55vw;
+	justify-content: center;
+    opacity: 1;
+	align-items: center;
+	background-color: transparent;
+	font-size: 2vw;
+	z-index: 2;
+}
+
+@keyframes vivaKeyStroke {
+	0%   {
+		fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255); }
+	80%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255); stroke-width: 3; }
+	100% {
+		fill: rgb(255, 255, 255); stroke: rgba(54,95,160,0); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+@keyframes statusKeyStroke {
+	0%   {
+		animation-delay: 2;
+        fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%;
+
+	}
+	70%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255); }
+	80%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255);}
+	100% {
+        stroke: while; 
+        fill: aliceblue ;
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
