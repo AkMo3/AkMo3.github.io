@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Smooch', cursive;
+    padding: 0;
+    background: #1d0c2f;
+}
+
+.main-background {
+    height: 52vw;
+    overflow: hidden;
+}
+
+#test {
+    width: 100%;
+    height: 102vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20vw;
+    color: white;
+    font-size: 16vw;
+    opacity: 01;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1;
+    animation: rotate 170s infinite;
+}
+
+.img {
+    background: url('../img/main-bg.png') center;
+    background-size: cover;
+    width: 100%;
+    height: 53vw;
+    position: absolute;
+    top: 0vw;
+    z-index: 1;
+}
+
+.overlay {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 55vw;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16vw;
+    opacity: 01;
+    background-color: rgba(40, 8, 54, 0.685);
+    z-index: 2;
+}
+
+.overlay-sub{
+    font-size: 1.1vw;
+    font-weight: 400;
+    position: relative;
+    opacity: 0.85;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.neon {
+    font-family: 'Smooch', cursive;
+    font-size: 130px;
+    color: #FFD5FF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA, 40px 0vw 200px #D42CCA;
+}
+
+.flicker-slow {
+    animation: flicker 3s linear infinite;
+}
+
+.flicker-fast {
+    animation: flicker 1s linear infinite;
+}
+
+@keyframes flicker {
+
+    0%,
+    19.999%,
+    22%,
+    62.999%,
+    64%,
+    64.999%,
+    70%,
+    100% {
+        text-shadow: none;
+        opacity: 0.99;
+
+    }
+
+    20%,
+    21.999%,
+    63%,
+    63.999%,
+    65%,
+    69.999% {
+        opacity: 0.4;
+    }
+}
