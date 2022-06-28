@@ -35,13 +35,13 @@ body {
     top: 0vw;
     z-index: 1;
 }
-
-.overlay {
+.overlay{
     display: flex;
+    flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 0;
-    height: 55vw;
+    top:0;
+    height: 52vw;
     justify-content: center;
     align-items: center;
     color: white;
@@ -49,28 +49,80 @@ body {
     opacity: 01;
     background-color: rgba(40, 8, 54, 0.685);
     z-index: 2;
-}
 
+}
 .overlay-sub{
     font-size: 1.1vw;
+    margin-top: -18vw;
     font-weight: 400;
-    position: relative;
+    position: absolute;
     opacity: 0.85;
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-.neon {
-    font-family: 'Smooch', cursive;
-    font-size: 130px;
-    color: #FFD5FF;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 400;
-    letter-spacing: 8px;
-    text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA, 40px 0vw 200px #D42CCA;
+.block{
+    background: white;
+    display: flex;
+    z-index: 2;
 }
+
+.vivacity {
+	font-family: 'Smooch', cursive;
+    margin-top: 10vw;
+}
+
+svg.vivacity text {
+	animation: vivaKeyStroke 2s  alternate;
+    animation-iteration-count: 1;
+	stroke-width: 0;
+	stroke: white;
+	height: 55vw;
+	justify-content: center;
+        
+	align-items: center;
+	color: white;
+    text-shadow:
+    0 0 4px #fff,
+    0 0 8px #fff,
+    0 0 12px #cb2cfc75,
+    0 0 15px #cb2cfc75,
+    0 0 30px #cb2cfc75,
+    0 0 50px #cb2cfc75,
+    0 0 60px #cb2cfc75,
+    0 0 90px #cb2cfc75;
+	font-size: 19vw;
+	opacity: 01;
+	background-color: rgba(40, 8, 54, 0.685);
+	z-index: 2;
+}
+
+.neon {
+    display: none;    
+	stroke-width: 0;
+	stroke: white;
+	height: 55vw;
+	justify-content: center;
+    position: absolute;
+    text-anchor: middle;
+	align-items: center;
+    transform: translateY(25%);
+	color: white;
+    text-shadow:
+    0 0 4px #fff,
+    0 0 8px #fff,
+    0 0 12px #cb2cfc75,
+    0 0 15px #cb2cfc75,
+    0 0 30px #cb2cfc75,
+    0 0 50px #cb2cfc75,
+    0 0 60px #cb2cfc75,
+    0 0 90px #cb2cfc75;
+	font-size: 19vw;
+	opacity: 01;
+	background-color:transparent;
+	z-index: 2;
+}
+
+
 
 .flicker-slow {
     animation: flicker 3s linear infinite;
@@ -103,4 +155,19 @@ body {
     69.999% {
         opacity: 0.4;
     }
+}
+
+
+@keyframes vivaKeyStroke {
+	0%   {
+		fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1;
+	}
+	70%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255); }
+	80%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255); stroke-width: 2; }
+	100% {
+		fill: rgb(255, 255, 255); stroke: rgba(54,95,160,0); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+    
 }
