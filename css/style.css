@@ -1,16 +1,19 @@
-body{
-    margin:0;
+body {
+    margin: 0;
     overflow-x: hidden;
     font-family: 'Smooch', cursive;
-    padding:0;
+    padding: 0;
     background: #1d0c2f;
 }
-.main-background{
+
+.main-background {
     height: 52vw;
     overflow: hidden;
 }
+
 #test {
-    width: 100%; height: 102vw; 
+    width: 100%;
+    height: 102vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,23 +24,23 @@ body{
     background-color: rgba(255, 255, 255, 0);
     z-index: 1;
     animation: rotate 170s infinite;
-  }
+}
 
-.img{
+.img {
     background: url('../img/main-bg.png') center;
     background-size: cover;
     width: 100%;
     height: 53vw;
     position: absolute;
-    top:0vw;
+    top: 0vw;
     z-index: 1;
 }
 
-.overlay{
+.overlay {
     display: flex;
     width: 100%;
     position: absolute;
-    top:0;
+    top: 0;
     height: 55vw;
     justify-content: center;
     align-items: center;
@@ -46,77 +49,58 @@ body{
     opacity: 01;
     background-color: rgba(40, 8, 54, 0.685);
     z-index: 2;
-
 }
 
-svg.vivacity {
-	font-family: 'Smooch', cursive;
-	position: absolute; 
-    font-size: 55vw;
+.overlay-sub{
+    font-size: 1.1vw;
+    font-weight: 400;
+    position: relative;
+    opacity: 0.85;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-svg.vivacity text {
-	text-transform: uppercase;
-	animation: vivaKeyStroke 2s infinite alternate;
-	stroke-width: 2;
-	stroke: white;
-	height: 55vw;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	font-size: 8vw;
-	opacity: 01;
-	background-color: rgba(40, 8, 54, 0.685);
-	z-index: 2;
+.neon {
+    font-family: 'Monoton', cursive;
+    font-size: 130px;
+    color: #FFD5FF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA, 40px 0vw 200px #D42CCA;
 }
 
-svg.status {
-	font-family: 'Smooch', cursive;
-	position: absolute; 
-    font-size: 40vw;
-    animation-delay: 2s;
+.flicker-slow {
+    animation: flicker 3s linear infinite;
 }
 
-svg.status text {
-    animation-delay: 2s;
-	animation: statusKeyStroke 2s infinite alternate;
-	stroke-width: 2;
-	stroke: transparent;
-	height: 55vw;
-	justify-content: center;
-    opacity: 1;
-	align-items: center;
-	background-color: transparent;
-	font-size: 2vw;
-	z-index: 2;
+.flicker-fast {
+    animation: flicker 1s linear infinite;
 }
 
-@keyframes vivaKeyStroke {
-	0%   {
-		fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255);
-		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
-	}
-	70%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255); }
-	80%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255); stroke-width: 3; }
-	100% {
-		fill: rgb(255, 255, 255); stroke: rgba(54,95,160,0); 
-		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
-	}
+@keyframes flicker {
+
+    0%,
+    19.999%,
+    22%,
+    62.999%,
+    64%,
+    64.999%,
+    70%,
+    100% {
+        text-shadow: none;
+        opacity: 0.99;
+
+    }
+
+    20%,
+    21.999%,
+    63%,
+    63.999%,
+    65%,
+    69.999% {
+        opacity: 0.4;
+    }
 }
-
-@keyframes statusKeyStroke {
-	0%   {
-		animation-delay: 2;
-        fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255);
-		stroke-dashoffset: 25%; stroke-dasharray: 0 50%;
-
-	}
-	70%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255); }
-	80%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255);}
-	100% {
-        stroke: while; 
-        fill: aliceblue ;
-		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
-	}
-}
-
